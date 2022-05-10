@@ -48,24 +48,28 @@ router.get('/project/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-router.get('/edit', (req, res) => {
-  res.render('edit');
-});
+// router.get('/edit', (req, res) => {
+//   res.render('edit');
+// });
 
-router.put('/edit', async (req, res) => {
+router.get('/edit/:id', async (req, res) => {
   try {
-    const udpatedProjectData = await Project.update(req.body, {
-      where: {
-        id: req.params.id,
-      }
-    })
-    const project = updatedProjectData.get({ plain: true });
+    const projectData = await Project.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const project = projectData.get({ plain: true });
 
     res.render('edit', {
       ...project,
       logged_in: req.session.logged_in
     });
-  } catch (error) {
+  } catch (err) {
     res.status(500).json(err);
   }
 });

@@ -17,18 +17,22 @@ router.post('/', withAuth, async (req, res) => {
 
 router.put('/edit/:id', withAuth, async (req, res) => {
   try {
-    const updatedProject = await Project.update({
-      where: {
-        id: req.params.id,
-        ...req.body,
-        user_id: req.session.user_id,
+    console.log(req.params.id);
+    console.log(req.body);
+    const updatedProject = await Project.update(
+      { ...req.body },
+      {
+        where: {
+          id: req.params.id,
+          user_id: req.session.user_id,
+        },
       }
-
-    });
+    );
 
     res.status(200).json(updatedProject);
   } catch (err) {
-    res.status(400).json(err);
+    console.log(err);
+    res.status(400).json(err.message);
   }
 });
 
