@@ -42,5 +42,5 @@ document
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('#delete')
+  .querySelector('.project-list')
   .addEventListener('click', delButtonHandler);
