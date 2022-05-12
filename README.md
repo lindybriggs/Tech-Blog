@@ -11,8 +11,7 @@
 
 ## Description
 
-a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well
-app that's deployed with heroku follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication
+A CMS-style blog site allows developers to publish blog posts and comment on other developers’ posts. Deployed with heroku and follows the MVC paradigm architectually, uses Handlebars.js as the templating language, Sequelize for ORM, and the express-session npm package for authentication. 
 
 ## Demo
 
