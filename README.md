@@ -74,8 +74,8 @@ THEN I am taken to the dashboard and presented with any blog posts I have alread
 THEN I am prompted to enter both a title and contents for my blog post
 WHEN I click on the button to create a new blog post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post -->
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
+<!-- WHEN I click on one of my existing posts in the dashboard
+THEN I am able to delete or update my post and taken back to an updated dashboard -->
 <!-- WHEN I click on the logout option in the navigation
 THEN I am signed out of the site -->
 <!-- WHEN I am idle on the site for more than a set time
@@ -98,7 +98,7 @@ Your application’s folder structure must follow the Model-View-Controller para
 
 ## Grading Requirements
 
-> **Note**: If a homework assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+<!-- > **Note**: If a homework assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 >
 > * A repository that has no code
 >
@@ -108,9 +108,9 @@ Your application’s folder structure must follow the Model-View-Controller para
 >
 > * A repository that only includes starter code
 
-This homework is graded based on the following criteria:
+This homework is graded based on the following criteria: -->
 
-### Technical Acceptance Criteria: 40%
+<!-- ### Technical Acceptance Criteria: 40%
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
@@ -118,9 +118,9 @@ This homework is graded based on the following criteria:
 
     * Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
 
-    * Application must be deployed to Heroku.
+    * Application must be deployed to Heroku. -->
 
-### Deployment: 32%
+<!-- ### Deployment: 32%
 
 * Application deployed at live URL.
 
@@ -128,13 +128,13 @@ This homework is graded based on the following criteria:
 
 * Application GitHub URL submitted.
 
-* GitHub repository contains application code.
+* GitHub repository contains application code. -->
 
 ### Application Quality: 15%
 
-* User experience is intuitive and easy to navigate.
+<!-- * User experience is intuitive and easy to navigate.
 
-* User interface style is clean and polished.
+* User interface style is clean and polished. -->
 
 * Application resembles the mock-up functionality provided in the homework instructions.
 
