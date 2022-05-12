@@ -16,9 +16,8 @@ app that's deployed with heroku follows the MVC paradigm in its architectural st
 
 ## Demo
 
-Screenshot:
-
-Link:
+<!-- Screenshot: -->
+Visit the deployed application here: [Heroku App](https://tech-blog-briggs.herokuapp.com/)
 
 ## Features
 
